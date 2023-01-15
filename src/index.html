@@ -11,8 +11,28 @@
   </head>
   <body>
     <div class="main">
+	<div class="image">
+	                  <img
+                    src="https://bulma.io/images/placeholders/96x96.png"
+                    alt="Placeholder image"
+                  />
+	</div>
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
+	
+			<script>
+
+
+const image = document.querySelector(".image");
+image.addEventListener("click", imageEvent);
+
+function imageEvent(){
+var img = image.getElementsByTagName("img");
+img[0].style.transform = "scale(2)";
+}
+
+</script>
+	
   </body>
 </html>
